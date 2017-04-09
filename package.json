@@ -1,0 +1,39 @@
+{
+  "name": "creative-template-basic",
+  "version": "1.0.0",
+  "description": "This is demo of creative template adhering to traditional web development paradigm ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomilKumar/creative-template-basic.git"
+  },
+  "keywords": [
+    "html5",
+    "sass",
+    "creative",
+    "template"
+  ],
+  "author": "somil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SomilKumar/creative-template-basic/issues"
+  },
+  "homepage": "https://github.com/SomilKumar/creative-template-basic#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-header": "^1.7.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.8.0"
+  }
+}
