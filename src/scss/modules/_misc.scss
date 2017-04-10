@@ -1,129 +1,26 @@
-::selection{
-  background: #333;
-  color: #fff;
-  text-shadow: none;
+ul, li {
+	list-style-type: none;
 }
-::-moz-selection{
-  background: #333;
-  color: #fff;
-  text-shadow: none;
-}
-::-webkit-selection{
-  background: #333;
-  color: #fff;
-  text-shadow: none;
+.content-center {
+	text-align: center;
 }
 
-
-//ICONS SCSS
-
-//urls
-$url_0: url('../img/icons/allicons.png');
-
-//@extend-elements
-//original selectors
-//.iconsettingsbigicon, .iconhearticon, .icongraphicon2, .iconstaricon, .iconmusicicon, .iconsystemicon, .iconmobileicon, .icondeleteicon, .icongraphicon, .iconlockicon, .icontreehouseicon, .icontickicon
-%extend_1 {
-	display: inline-block;
-	background: $url_0 no-repeat;
-	overflow: hidden;
-	text-indent: -9999px;
-	text-align: left;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
 }
 
-
-.iconsettingsbigicon {
-	@extend %extend_1;
-	background-position: -2px -0px;
-	width: 389px;
-	height: 412px;
-}
-.iconhearticon {
-	@extend %extend_1;
-	background-position: -2px -414px;
-	width: 54px;
-	height: 48px;
-}
-.icongraphicon2 {
-	@extend %extend_1;
-	background-position: -58px -414px;
-	width: 53px;
-	height: 32px;
-}
-.iconstaricon {
-	@extend %extend_1;
-	background-position: -113px -414px;
-	width: 50px;
-	height: 47px;
-}
-.iconmusicicon {
-	@extend %extend_1;
-	background-position: -165px -414px;
-	width: 47px;
-	height: 45px;
-}
-.iconsystemicon {
-	@extend %extend_1;
-	background-position: -214px -414px;
-	width: 41px;
-	height: 34px;
-}
-.iconmobileicon {
-	@extend %extend_1;
-	background-position: -257px -414px;
-	width: 40px;
-	height: 51px;
-}
-.icondeleteicon {
-	@extend %extend_1;
-	background-position: -299px -414px;
-	width: 39px;
-	height: 38px;
-}
-.icongraphicon {
-	@extend %extend_1;
-	background-position: -340px -414px;
-	width: 35px;
-	height: 47px;
-}
-.iconlockicon {
-	@extend %extend_1;
-	background-position: -58px -448px;
-	width: 29px;
-	height: 38px;
-}
-.icontreehouseicon {
-	@extend %extend_1;
-	background-position: -89px -448px;
-	width: 18px;
-	height: 18px;
-}
-.icontickicon {
-	@extend %extend_1;
-	background-position: -214px -450px;
-	width: 16px;
-	height: 12px;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
-
-
-
-// Icons
-
-// .iconsettingsbigicon, .iconhearticon, .icongraphicon2, .iconstaricon, .iconmusicicon,
-// .iconsystemicon, .iconmobileicon, .icondeleteicon, .icongraphicon, .iconlockicon,
-// .icontreehouseicon, .icontickicon
-// { display: inline-block; background: url('../img/icons/allicons.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
-//
-// .iconsettingsbigicon { background-position: -2px -0px; width: 389px; height: 412px; }
-// .iconhearticon { background-position: -2px -414px; width: 54px; height: 48px; }
-// .icongraphicon2 { background-position: -58px -414px; width: 53px; height: 32px; }
-// .iconstaricon { background-position: -113px -414px; width: 50px; height: 47px; }
-// .iconmusicicon { background-position: -165px -414px; width: 47px; height: 45px; }
-// .iconsystemicon { background-position: -214px -414px; width: 41px; height: 34px; }
-// .iconmobileicon { background-position: -257px -414px; width: 40px; height: 51px; }
-// .icondeleteicon { background-position: -299px -414px; width: 39px; height: 38px; }
-// .icongraphicon { background-position: -340px -414px; width: 35px; height: 47px; }
-// .iconlockicon { background-position: -58px -448px; width: 29px; height: 38px; }
-// .icontreehouseicon { background-position: -89px -448px; width: 18px; height: 18px; }
-// .icontickicon { background-position: -214px -450px; width: 16px; height: 12px; }
+.clearfix:after {
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
