@@ -471,10 +471,22 @@ section {
 
 .projects {
   position: relative;
-  background-image: url(../img/tablet.png);
+  background-image: url("../img/tablet.png");
   background-position: 100% 60%;
   background-size: 50% 60%;
   background-repeat: no-repeat; }
+  .projects a {
+    font-family: 'montserrat-regular';
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #7cc576; }
+    .projects a span {
+      display: inline-block;
+      font-weight: bold;
+      transition: all 0.5s ease; }
+  .projects a:hover span {
+    -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
 
 .project-items {
   position: relative;
@@ -509,6 +521,37 @@ section {
         font-weight: bold;
         font-size: 1.1em;
         color: #222222; }
+
+.values .value-item span {
+  width: 85px;
+  height: 85px;
+  border: 4px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background: url("../img/icons-sheet.png") no-repeat; }
+  .values .value-item span.values-icon-1 {
+    background-position: 84.032% 13.073%; }
+  .values .value-item span.values-icon-2 {
+    background-position: 84.032% 13.073%; }
+  .values .value-item span.values-icon-3 {
+    background-position: 84.032% 13.073%; }
+
+.contactus {
+  background: #7cc576; }
+  .contactus h3 {
+    color: white; }
+
+.sponsors span {
+  width: 161px;
+  height: 30px;
+  background: url("../img/icons-sheet.png") no-repeat; }
+  .sponsors span .sponsor-icon-1 {
+    background-position: 79.842% 55.408%; }
+  .sponsors span .sponsor-icon-2 {
+    background-position: 79.842% 55.408%; }
+  .sponsors span .sponsor-icon-3 {
+    background-position: 79.842% 55.408%; }
+  .sponsors span .sponsor-icon-4 {
+    background-position: 79.842% 55.408%; }
 
 .button {
   max-width: 200px;

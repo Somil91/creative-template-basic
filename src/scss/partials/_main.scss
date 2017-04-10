@@ -44,11 +44,13 @@ section {
     }
 }
 
-.services {}
+.services {
+
+}
 
 .features {
     .relax-wrap {
-        width:100%;
+        width: 100%;
         background: url('../img/sea.png') no-repeat center center;
         background-size: cover;
     }
@@ -77,50 +79,108 @@ section {
     }
 }
 
-
 .projects {
-  position:relative;
-	background-image: url(../img/tablet.png);
-  background-position: 100% 60%;
-  -o-background-size: 50% 60%;
-  background-size: 50% 60%;
-  background-repeat: no-repeat;
+    position: relative;
+    background-image: url("../img/tablet.png");
+    background-position: 100% 60%;
+    -o-background-size: 50% 60%;
+    background-size: 50% 60%;
+    background-repeat: no-repeat;
 
+    a {
+        @include hyperlinks;
+        color: $accent;
+
+        span {
+            display: inline-block;
+            font-weight: bold;
+            transition: all 0.5s ease;
+        }
+    }
+
+    a:hover span {
+        transform: rotate(90deg);
+    }
 }
 
-
 .project-items {
-	position: relative;
-	display: block;
-	margin: 2em auto;
-	.project {
-		display: block;
-		position: relative;
-		margin: 0 auto;
-		width: 100%;
-		min-height: 80px;
-		span {
-			display: block;
-			float: left;
-			width: 65px;
-			height: 65px;
-			background: url('../img/icons-sheet.png') no-repeat;
-			border: 2px solid $dark;
-			border-radius: 50%;
-			&.project-icon-1 {background-position: 0.796% 1.129%;}
-			&.project-icon-2 {background-position: 20% 8%;}
-			&.project-icon-3 {background-position: 37.5% 8%;}
-		}
-		.project-details {
-			display: inline-block;
-			float: left;
-			width: 70%;
-			margin-left: 0.5em;
-			.project-heading {
-				font-weight: bold;
-				font-size: 1.1em;
-				color: $dark;
-			}
-		}
+    position: relative;
+    display: block;
+    margin: 2em auto;
+
+    .project {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 80px;
+
+        span {
+            display: block;
+            float: left;
+            width: 65px;
+            height: 65px;
+            background: url('../img/icons-sheet.png') no-repeat;
+            border: 2px solid $dark;
+            border-radius: 50%;
+
+            &.project-icon-1 {
+                background-position: 0.796% 1.129%;
+            }
+
+            &.project-icon-2 {
+                background-position: 20% 8%;
+            }
+
+            &.project-icon-3 {
+                background-position: 37.5% 8%;
+            }
+        }
+
+        .project-details {
+            display: inline-block;
+            float: left;
+            width: 70%;
+            margin-left: 0.5em;
+
+            .project-heading {
+                font-weight: bold;
+                font-size: 1.1em;
+                color: $dark;
+            }
+        }
+    }
+}
+
+.values {
+  .value-item span {
+      width: 85px;
+  		height: 85px;
+  		border: 4px solid rgba(0,0,0, 0.4);
+  		border-radius: 50%;
+      background: url('../img/icons-sheet.png') no-repeat;
+  		&.values-icon-1 {background-position: 84.032% 13.073%;}
+  		&.values-icon-2 {background-position: 84.032% 13.073%;}
+  		&.values-icon-3 {background-position: 84.032% 13.073%;}
+  }
+}
+
+.contactus  {
+  background: $accent;
+	h3 {
+		color: $light;
 	}
+}
+
+.sponsors {
+  span   {
+    width: 161px;
+    height: 30px;
+    background: url('../img/icons-sheet.png') no-repeat;
+    & .sponsor-icon-1 {background-position: 79.842% 55.408%}
+    & .sponsor-icon-2 {background-position: 79.842% 55.408%}
+    & .sponsor-icon-3 {background-position: 79.842% 55.408%}
+    & .sponsor-icon-4 {background-position: 79.842% 55.408%}
+  }
+
 }
