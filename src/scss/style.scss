@@ -4,10 +4,11 @@
 @import 'flexboxgrid.min.css';
 
 //----------------------------------*\
-// SCSS MIXINS
+// SCSS BASE : MIXINS
 //----------------------------------*/
 
-@import 'mixins/_position.scss';
+@import 'base/_base.scss';
+@import 'base/_position.scss';
 
 //----------------------------------*\
 // CONFIG MODULES

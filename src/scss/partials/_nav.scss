@@ -1,10 +1,25 @@
 .nav {
-  ul {
-    list-style: none;
-    li {
-      a {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
 
-      }
+        li {
+            display: inline-block;
+            float: left;
+            margin-right: 1px;
+            padding: 0 2em 0.8em 0;
+	 		        border-bottom: 2px solid transparent;
+	 		         transition: all 0.6s ease-in;
+
+            a {
+                @include hyperlinks;
+                display: block;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
     }
-  }
 }
