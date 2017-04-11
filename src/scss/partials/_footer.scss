@@ -1,3 +1,105 @@
 .footer {
+  background-color: $dark;
+  color:$light;
+  margin: 3em 0 3em 0;
+  padding: 3em 0 6em 0;
+  h4 {
+		color: $light;
+		margin-bottom: 1em;
+	}
+
+  .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+		margin-bottom: -0.9em;
+		background: url('../img/icons-sheet.png') no-repeat;
+		margin-right: 1em;
+
+    &.icon-location {
+      background-position: 54.969% 1.106%;
+    }
+    &.icon-iphone {
+      background-position: 42.2% 1.30%;
+    }
+    &.icon-mail {
+      background-position: 19.47% 1.07%;
+    }
+    &.icon-news {
+      background-position: 90.17% 12.33%;
+    }
+    &.icon-gallery {
+      background-position: 95.79% 12.39%;
+    }
+    &.icon-media {
+      background-position: 68.25% 13.64%;
+    }
+    &.icon-twitter {
+      background-position: 62.34% 25.26%;
+    }
+
+  }
+
+.display-flex-column {
+    align-items: center;
+    display: inline-block;
+
+  .display-flex-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 95%;
+    padding-left: 2em;
+    margin-bottom: 1.3em;
+
+    span {
+      width: 220px;
+      word-wrap: break-word;
+      text-align: start;
+    }
+  }
+}
+
+}
+
+.copyright {
+  padding-bottom: 1.3em;
+
+}
+
+.social-links {
+  span {
+    padding-right: 1.3em;
+    display: inline-block;
+
+   .icon {
+     display: block;
+     position: relative;
+     width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: $dark;
+      &:before {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        display: block;
+        background: url('../img/icons-sheet.png') no-repeat;
+      }
+      &.icon-twitter:before {
+        background-position: 62.64% 24.26%;
+      }
+      &.icon-facebook:before {
+        background-position: 23.4% -0.57%;
+      }
+      &.icon-google-plus:before {
+        background-position: 27.0% -1.0%;
+      }
+   }
+}
+
+
 
 }

@@ -4,7 +4,7 @@ body {
   overflow-X: hidden; }
 
 .app-container {
-  width: 95%;
+  width: 100%;
   margin: 0 auto; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -384,7 +384,7 @@ textarea {
   font-family: 'montserrat-regular';
   text-transform: uppercase;
   font-size: 1.1em;
-  padding-right: 3em;
+  padding-right: 0.3em;
   height: 50px;
   text-align: center;
   line-height: 50px;
@@ -562,7 +562,8 @@ section {
     .project-items .project .project-details {
       display: inline-block;
       float: left;
-      width: 70%;
+      width: 25%;
+      word-wrap: break-word;
       margin-left: 0.5em; }
       .project-items .project .project-details .project-heading {
         font-weight: bold;
@@ -570,10 +571,9 @@ section {
         color: #222222; }
 
 .values {
-  background-color: #f9f9f9; }
-  .values .container {
-    margin: 3em 0;
-    padding: 5em 0; }
+  background-color: #f9f9f9;
+  margin: 3em 0;
+  padding: 5em 0; }
   .values .values-header {
     margin: 0 0 1.3em; }
   .values .value-item span {
@@ -607,22 +607,104 @@ section {
     font-size: 0.95em; }
 
 .contactus {
-  background: #7cc576; }
+  background: #7cc576;
+  padding: 3em 0 3em 0; }
   .contactus h3 {
     color: white; }
 
-.sponsors span {
-  width: 161px;
-  height: 30px;
-  background: url("../img/icons-sheet.png") no-repeat; }
-  .sponsors span .sponsor-icon-1 {
-    background-position: 79.842% 55.408%; }
-  .sponsors span .sponsor-icon-2 {
-    background-position: 79.842% 55.408%; }
-  .sponsors span .sponsor-icon-3 {
-    background-position: 79.842% 55.408%; }
-  .sponsors span .sponsor-icon-4 {
-    background-position: 79.842% 55.408%; }
+.sponsors {
+  padding: 3em 0 6em 0; }
+  .sponsors .sponsor {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .sponsors .sponsor span {
+      display: block;
+      width: 200px;
+      height: 42px;
+      background: url("../img/icons-sheet.png") no-repeat; }
+      .sponsors .sponsor span.sponsor-icon-1 {
+        background-position: 79.84% 55.40%; }
+      .sponsors .sponsor span.sponsor-icon-2 {
+        background-position: 83.99% 45.12%; }
+      .sponsors .sponsor span.sponsor-icon-3 {
+        background-position: 75.37% 33.48%; }
+      .sponsors .sponsor span.sponsor-icon-4 {
+        background-position: 98.0% 1.13%; }
+
+.footer {
+  background-color: #222222;
+  color: white;
+  margin: 3em 0 3em 0;
+  padding: 3em 0 6em 0; }
+  .footer h4 {
+    color: white;
+    margin-bottom: 1em; }
+  .footer .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -0.9em;
+    background: url("../img/icons-sheet.png") no-repeat;
+    margin-right: 1em; }
+    .footer .icon.icon-location {
+      background-position: 54.969% 1.106%; }
+    .footer .icon.icon-iphone {
+      background-position: 42.2% 1.30%; }
+    .footer .icon.icon-mail {
+      background-position: 19.47% 1.07%; }
+    .footer .icon.icon-news {
+      background-position: 90.17% 12.33%; }
+    .footer .icon.icon-gallery {
+      background-position: 95.79% 12.39%; }
+    .footer .icon.icon-media {
+      background-position: 68.25% 13.64%; }
+    .footer .icon.icon-twitter {
+      background-position: 62.34% 25.26%; }
+  .footer .display-flex-column {
+    -ms-flex-align: center;
+        align-items: center;
+    display: inline-block; }
+    .footer .display-flex-column .display-flex-row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      width: 95%;
+      padding-left: 2em;
+      margin-bottom: 1.3em; }
+      .footer .display-flex-column .display-flex-row span {
+        width: 220px;
+        word-wrap: break-word;
+        text-align: start; }
+
+.copyright {
+  padding-bottom: 1.3em; }
+
+.social-links span {
+  padding-right: 1.3em;
+  display: inline-block; }
+  .social-links span .icon {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #222222; }
+    .social-links span .icon:before {
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute;
+      display: block;
+      background: url("../img/icons-sheet.png") no-repeat; }
+    .social-links span .icon.icon-twitter:before {
+      background-position: 62.64% 24.26%; }
+    .social-links span .icon.icon-facebook:before {
+      background-position: 23.4% -0.57%; }
+    .social-links span .icon.icon-google-plus:before {
+      background-position: 27.0% -1.0%; }
 
 .button {
   max-width: 200px;
@@ -733,13 +815,18 @@ a {
   width: 100%;
   clear: both; }
 
-@media only screen and (min-width: 320px) {
-  .nav-items a {
-    padding-right: 0.3em; } }
+@media only screen and (max-width: 320px) {
+  .project-items .project .project-details {
+    width: 50%; } }
 
-@media only screen and (min-width: 480px) {
-  .nav-items a {
-    padding-right: 0.3em; } }
+@media only screen and (max-width: 480px) {
+  .project-items .project .project-details {
+    width: 50%; } }
+
+@media only screen and (min-width: 1140px) {
+  .sponsors .sponsor {
+    -ms-flex-direction: row;
+        flex-direction: row; } }
 
 @media print {
   * {

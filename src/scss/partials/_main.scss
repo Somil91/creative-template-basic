@@ -243,7 +243,8 @@ section {
         .project-details {
             display: inline-block;
             float: left;
-            width: 70%;
+            width: 25%;
+            word-wrap: break-word;
             margin-left: 0.5em;
 
             .project-heading {
@@ -257,11 +258,8 @@ section {
 
 .values {
     background-color: $light-alt;
-
-    .container {
-        margin: 3em 0;
-        padding: 5em 0;
-    }
+    margin: 3em 0;
+    padding: 5em 0;
 
     .values-header {
         margin: 0 0 1.3em;
@@ -324,32 +322,43 @@ section {
 
 .contactus {
     background: $accent;
+    padding : 3em 0 3em 0;
 
     h3 {
         color: $light;
+
+
     }
 }
 
 .sponsors {
+  padding: 3em 0 6em 0;
+  // margin-left: 10em;
+
+  .sponsor {
+    display: flex;
+    flex-direction: column;
     span {
-        width: 161px;
-        height: 30px;
+        display: block;
+        width:200px;
+        height:42px;
         background: url('../img/icons-sheet.png') no-repeat;
 
-        & .sponsor-icon-1 {
-            background-position: 79.842% 55.408%;
+        &.sponsor-icon-1 {
+            background-position: 79.84% 55.40%;
         }
 
-        & .sponsor-icon-2 {
-            background-position: 79.842% 55.408%;
+        &.sponsor-icon-2 {
+            background-position: 83.99% 45.12%;
         }
 
-        & .sponsor-icon-3 {
-            background-position: 79.842% 55.408%;
+        &.sponsor-icon-3 {
+            background-position: 75.37% 33.48%;
         }
 
-        & .sponsor-icon-4 {
-            background-position: 79.842% 55.408%;
+        &.sponsor-icon-4 {
+            background-position: 98.0% 1.13%;
         }
     }
+  }
 }
