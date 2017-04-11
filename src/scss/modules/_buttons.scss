@@ -5,31 +5,21 @@
 	padding: 14px 24px;
 	cursor: pointer;
 	transition: all 1s ease;
+
 	a {
 		@include hyperlinks;
 		color: $light;
 		transition: all 1s ease;
-	}
-	&:hover {
-		background: $light;
-		a {
-			color: $accent;
-		}
 	}
 }
 
 .button-primary {
 	border-radius: 30px;
 }
+
 .button-secondary {
 	border-radius: 8px;
 	margin-top: 1em;
 	background: transparent;
 	border: 3px solid $light;
-	a {
-		color: $light;
-		&:hover {
-			color: $accent;
-		}
-	}
 }

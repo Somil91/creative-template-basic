@@ -290,75 +290,70 @@ section {
     }
 }
 
-
 .customers {
+    .customers-header {
+        margin: 0.3em 0 4em;
+    }
 
-  .customers-header {
-    margin : 0.3em 0 4em 0;
-  }
+    .customer {
+        margin-bottom: 2em;
 
-  .customer {
-    margin-bottom: 2em;
-     img {
-       width: 80%;
-			max-width: 240px;
-			background-color: $light-alt;
-     }
+        img {
+            width: 80%;
+            max-width: 240px;
+            background-color: $light-alt;
+        }
 
-     .description {
-    padding: 3em;
-    line-height: 1.5em;
-    background-color: $light_alt;
-     }
+        .description {
+            padding: 3em;
+            line-height: 1.5em;
+            background-color: $light_alt;
+        }
 
-     span {
-       color: $accent;
-				font-size: 0.95em;
-     }
-  }
-
-
+        span {
+            color: $accent;
+            font-size: 0.95em;
+        }
+    }
 }
 
 .contactus {
     background: $accent;
-    padding : 3em 0 3em 0;
+    padding: 3em 0;
 
     h3 {
         color: $light;
-
-
     }
 }
 
 .sponsors {
-  padding: 3em 0 6em 0;
-  // margin-left: 10em;
+    padding: 3em 0 6em;
+    // margin-left: 10em;
+    .sponsor {
+        display: flex;
+        flex-direction: column;
 
-  .sponsor {
-    display: flex;
-    flex-direction: column;
-    span {
-        display: block;
-        width:200px;
-        height:42px;
-        background: url('../img/icons-sheet.png') no-repeat;
+        span {
+            display: block;
+            width: 200px;
+            height: 42px;
+            background: url('../img/icons-sheet.png') no-repeat;
 
-        &.sponsor-icon-1 {
-            background-position: 79.84% 55.40%;
-        }
+            &.sponsor-icon-1 {
+                background-position: 79.84% 55.40%;
+            }
 
-        &.sponsor-icon-2 {
-            background-position: 83.99% 45.12%;
-        }
+            &.sponsor-icon-2 {
+                background-position: 83.99% 45.12%;
+            }
 
-        &.sponsor-icon-3 {
-            background-position: 75.37% 33.48%;
-        }
+            &.sponsor-icon-3 {
+                background-position: 75.37% 33.48%;
+            }
 
-        &.sponsor-icon-4 {
-            background-position: 98.0% 1.13%;
+            &.sponsor-icon-4 {
+                background-position: 98.0% 1.13%;
+            }
         }
     }
-  }
 }

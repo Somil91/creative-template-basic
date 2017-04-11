@@ -33,14 +33,8 @@ body {
  * 1. Add the correct display in Edge, IE, and Firefox.
  * 2. Add the correct display in IE.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
+article, aside, details,
+figcaption, figure, footer, header, main,
 menu,
 nav,
 section,
@@ -261,8 +255,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-html [type="button"],
+button, html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
@@ -271,20 +264,20 @@ html [type="button"],
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
   border-style: none;
   padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
 /**
@@ -590,7 +583,7 @@ section {
       background-position: 95.5% 19.69%; }
 
 .customers .customers-header {
-  margin: 0.3em 0 4em 0; }
+  margin: 0.3em 0 4em; }
 
 .customers .customer {
   margin-bottom: 2em; }
@@ -608,12 +601,12 @@ section {
 
 .contactus {
   background: #7cc576;
-  padding: 3em 0 3em 0; }
+  padding: 3em 0; }
   .contactus h3 {
     color: white; }
 
 .sponsors {
-  padding: 3em 0 6em 0; }
+  padding: 3em 0 6em; }
   .sponsors .sponsor {
     display: -ms-flexbox;
     display: flex;
@@ -636,8 +629,8 @@ section {
 .footer {
   background-color: #222222;
   color: white;
-  margin: 3em 0 3em 0;
-  padding: 3em 0 6em 0; }
+  margin: 3em 0;
+  padding: 3em 0 6em; }
   .footer h4 {
     color: white;
     margin-bottom: 1em; }
@@ -719,10 +712,6 @@ section {
     font-size: 1.1em;
     color: white;
     transition: all 1s ease; }
-  .button:hover {
-    background: white; }
-    .button:hover a {
-      color: #7cc576; }
 
 .button-primary {
   border-radius: 30px; }
@@ -732,10 +721,6 @@ section {
   margin-top: 1em;
   background: transparent;
   border: 3px solid white; }
-  .button-secondary a {
-    color: white; }
-    .button-secondary a:hover {
-      color: #7cc576; }
 
 @font-face {
   font-family: 'montserrat-regular';
@@ -792,7 +777,8 @@ h4 {
 p {
   color: #777777; }
 
-ul, li {
+li,
+ul {
   list-style-type: none; }
 
 .content-center {
@@ -827,42 +813,3 @@ a {
   .sponsors .sponsor {
     -ms-flex-direction: row;
         flex-direction: row; } }
-
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  img {
-    max-width: 100% !important; }
-  @page {
-    margin: 0.5cm; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
