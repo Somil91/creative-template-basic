@@ -1,359 +1,357 @@
 section {
-    padding: 3em 0 0;
+  padding: 3em 0 0;
 }
 
 .banner {
-    padding: 0.3em;
-    margin: 0.5em;
+  padding: 0.3em;
+  margin: 0.5em;
 }
 
 .main-logo {
+  display: inline-block;
+  width: 90%;
+
+  img {
     display: inline-block;
-    width: 90%;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
 
-    img {
-        display: inline-block;
-        vertical-align: middle;
-        margin-bottom: 2px;
-    }
-
-    h1 {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 0.2em;
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.2em;
     }
 }
 
 .section-1 {
-    .jumbotron {
-        position: relative;
-        background: url("../img/jumbo.png") no-repeat center center;
-        background-size: cover;
-        z-index: 1;
 
-        &:before {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            opacity: 0.75;
-            z-index: -1;
-        }
+  .jumbotron {
+    position: relative;
+    background: url("../img/jumbo.png") no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $dark;
+      opacity: 0.75;
+      z-index: -1;
+    }
     }
 
-    .content-center {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 6.5em;
-        z-index: 10;
+  .content-center {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6.5em;
+    z-index: 10;
 
-        h2,
-        p {
-            color: $light;
-        }
+    h2,
+    p {
+      color: $light;
+    }
 
-        p {
-            margin: 1.1em 0 2em;
-        }
+    p {
+      margin: 1.1em 0 2em;
+    }
 
-        button {
-            margin-bottom: 4em;
-        }
+    button {
+      margin-bottom: 4em;
+    }
     }
 }
 
 .service {
-    margin: 2em 0 0;
+  margin: 2em 0 0;
 
-    span {
-        display: inline-block;
-        width: 62px;
-        height: 62px;
-        background: url('../img/icons-sheet.png') no-repeat;
+  span {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    background: url("../img/icons-sheet.png") no-repeat;
 
-        &.service-icon-1 {
-            background-position: 65.905% 0.049%;
-        }
+    &.service-icon-1 {
+      background-position: 65.905% 0.049%;
+   }
 
-        &.service-icon-2 {
-            background-position: 75.12% 13.225%;
-        }
+    &.service-icon-2 {
+      background-position: 75.12% 13.225%;
+   }
 
-        &.service-icon-3 {
-            background-position: 33.987% 1.139%;
-        }
+    &.service-icon-3 {
+      background-position: 33.987% 1.139%;
+   }
+ }
+
+  h4 {
+    margin: 1em auto;
     }
 
-    h4 {
-        margin: 1.0em auto;
-    }
-
-    p {
-        max-width: 80%;
-        margin-left: 10%;
+  p {
+    max-width: 80%;
+    margin-left: 10%;
     }
 }
 
 .features {
-    z-index: 1;
+  z-index: 1;
 
-    .setting-icon {
-        z-index: -3;
-        background-color: #e9e9e9;
+  .setting-icon {
+    z-index: -3;
+    background-color: $light-alt;
     }
 
-    .description {
-        position: relative;
-        display: block;
-        background: url('../img/sea.png') no-repeat center center;
-        background-size: cover;
+  .description {
+    position: relative;
+    display: block;
+    background: url("../img/sea.png") no-repeat center center;
+    background-size: cover;
 
-        &::before {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            left: -205px;
-            height: 100%;
-            width: 100%;
-            background: url('../img/icons-sheet.png') no-repeat;
-            background-position: 1.799% 92.537%;
-            z-index: -2;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -205px;
+      height: 100%;
+      width: 100%;
+      background: url("../img/icons-sheet.png") no-repeat;
+      background-position: 1.799% 92.537%;
+      z-index: -2;
         }
 
-        &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $dark;
-            opacity: 0.7;
-            z-index: 3;
-        }
-
-        .content {
-            position: relative;
-            z-index: 4;
-            margin: 4em;
-
-            h3,
-            p {
-                color: $light;
-            }
-
-            h3 span {
-                color: $accent;
-            }
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $dark;
+      opacity: 0.7;
+      z-index: 3;
     }
 
-    li {
-        span {
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            float: left;
-            border: 2px solid rgba(255, 255, 255, 0.6);
-            background: url('../img/icons-sheet.png') no-repeat;
-            background-position: 15.0% 0.02%;
-            border-radius: 50%;
-            margin-right: 1em;
+    .content {
+      position: relative;
+      z-index: 4;
+      margin: 4em;
+      }
+
+    h3,
+    p {
+      color: $light;
+      }
+
+    .accent-text {
+      color: $accent;
+    }
+
+}
+
+  li {
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      float: left;
+      border: 2px solid $light-smoke;
+      background: url("../img/icons-sheet.png") no-repeat;
+      background-position: 15% 0.02%;
+      border-radius: 50%;
+      margin-right: 1em;
         }
 
-        p {
-            vertical-align: middle;
-            line-height: 30px;
+    p {
+      vertical-align: middle;
+      line-height: 30px;
         }
     }
 }
 
 .projects {
-    position: relative;
-    background-image: url("../img/tablet.png");
-    background-position: 100% 60%;
-    background-size: 50% 60%;
-    background-repeat: no-repeat;
+  position: relative;
+  background-image: url("../img/tablet.png");
+  background-position: 100% 60%;
+  background-size: 50% 60%;
+  background-repeat: no-repeat;
 
-    .project-header {
-        margin: 3em 0 0;
-        max-width: 400px;
+  .project-header {
+    margin: 3em 0 0;
+    max-width: 400px;
 
-        h4 {
-            margin: 1.2em 0;
-        }
+    h4 {
+      margin: 1.2em 0;
     }
+  }
 
-    .project-footer {
-        @extend .project-header;
+  .project-footer {
+    margin: 3em 0 0;
+    max-width: 400px;
 
-        a {
-            @include hyperlinks;
-            color: $accent;
-
-            span {
-                display: inline-block;
-                font-weight: bold;
-                transition: all 0.5s ease;
-            }
+    a {
+      @include hyperlinks;
+      color: $accent;
         }
     }
 }
 
 .project-items {
-    position: relative;
-    display: block;
-    margin: 2em auto;
-
-    .project {
-        display: block;
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        min-height: 80px;
-
-        span {
-            display: block;
-            float: left;
-            width: 65px;
-            height: 65px;
-            background: url('../img/icons-sheet.png') no-repeat;
-            border: 2px solid $dark;
-            border-radius: 50%;
-
-            &.project-icon-1 {
-                background-position: -1.0% -1.2%;
-            }
-
-            &.project-icon-2 {
-                background-position: 48.4% -2%;
-            }
-
-            &.project-icon-3 {
-                background-position: 64.0% 12.8%;
-            }
-        }
-
-        .project-details {
-            display: inline-block;
-            float: left;
-            width: 25%;
-            word-wrap: break-word;
-            margin-left: 0.5em;
-
-            .project-heading {
-                font-weight: bold;
-                font-size: 1.1em;
-                color: $dark;
-            }
-        }
-    }
+  position: relative;
+  display: block;
+  margin: 2em auto;
 }
+
+.project {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 80px;
+
+  span {
+    display: block;
+    float: left;
+    width: 65px;
+    height: 65px;
+    background: url("../img/icons-sheet.png") no-repeat;
+    border: 2px solid $dark;
+    border-radius: 50%;
+
+    &.project-icon-1 {
+      background-position: -1% -1.2%;
+     }
+
+    &.project-icon-2 {
+      background-position: 48.4% -2%;
+    }
+
+    &.project-icon-3 {
+      background-position: 64% 12.8%;
+   }
+  }
+
+  .project-details {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    word-wrap: break-word;
+    margin-left: 0.5em;
+
+    .project-heading {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: $dark;
+      }
+    }
+  }
+
 
 .values {
-    background-color: $light-alt;
-    margin: 3em 0;
-    padding: 5em 0;
+  background-color: $light-alt;
+  margin: 3em 0;
+  padding: 5em 0;
 
-    .values-header {
-        margin: 0 0 1.3em;
-    }
-
-    .value-item {
-        @extend .service;
-
-        span {
-            width: 80px;
-            height: 80px;
-            border: 4px solid rgba(0,0,0, 0.4);
-            border-radius: 50%;
-            background: url('../img/icons-sheet.png') no-repeat;
-
-            &.values-icon-1 {
-                background-position: 86.4% 11.0%;
-            }
-
-            &.values-icon-2 {
-                background-position: 6.9% -0.8%;
-            }
-
-            &.values-icon-3 {
-                background-position: 95.5% 19.69%;
-            }
-        }
-    }
+  .values-header {
+    margin: 0 0 1.3em;
+  }
 }
 
-.customers {
-    .customers-header {
-        margin: 0.3em 0 4em;
+.value-item {
+  margin: 2em 0 0;
+
+  span {
+    width: 80px;
+    height: 80px;
+    border: 4px solid $dark-alt;
+    border-radius: 50%;
+    background: url("../img/icons-sheet.png") no-repeat;
+
+    &.values-icon-1 {
+      background-position: 86.4% 11%;
     }
 
-    .customer {
-        margin-bottom: 2em;
+    &.values-icon-2 {
+      background-position: 6.9% -0.8%;
+    }
 
-        img {
-            width: 80%;
-            max-width: 240px;
-            background-color: $light-alt;
-        }
+    &.values-icon-3 {
+      background-position: 95.5% 19.69%;
+    }
+  }
+  }
 
-        .description {
-            padding: 3em;
-            line-height: 1.5em;
-            background-color: $light_alt;
-        }
+.customers {
+  .customers-header {
+    margin: 0.3em 0 4em;
+    }
 
-        span {
-            color: $accent;
-            font-size: 0.95em;
+  .customer {
+    margin-bottom: 2em;
+
+    img {
+      width: 80%;
+      max-width: 240px;
+      background-color: $light-alt;
+      }
+
+    .description {
+      padding: 3em;
+      line-height: 1.5em;
+      background-color: $light-alt;
+    }
+
+    span {
+      color: $accent;
+      font-size: 0.95em;
         }
     }
 }
 
 .contactus {
-    background: $accent;
-    padding: 3em 0;
+  background: $accent;
+  padding: 3em 0;
 
-    h3 {
-        color: $light;
+  h3 {
+    color: $light;
     }
 }
 
 .sponsors {
-    padding: 3em 0 6em;
-    // margin-left: 10em;
-    .sponsor {
-        display: flex;
-        flex-direction: column;
-
-        span {
-            display: block;
-            width: 200px;
-            height: 42px;
-            background: url('../img/icons-sheet.png') no-repeat;
-
-            &.sponsor-icon-1 {
-                background-position: 79.84% 55.40%;
-            }
-
-            &.sponsor-icon-2 {
-                background-position: 83.99% 45.12%;
-            }
-
-            &.sponsor-icon-3 {
-                background-position: 75.37% 33.48%;
-            }
-
-            &.sponsor-icon-4 {
-                background-position: 98.0% 1.13%;
-            }
-        }
-    }
+  padding: 3em 0 6em;
 }
+  // margin-left: 10em;
+.sponsor {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    display: block;
+    width: 200px;
+    height: 42px;
+    background: url("../img/icons-sheet.png") no-repeat;
+
+    &.sponsor-icon-1 {
+      background-position: 79.84% 55.40%;
+    }
+
+    &.sponsor-icon-2 {
+      background-position: 83.99% 45.12%;
+    }
+
+    &.sponsor-icon-3 {
+      background-position: 75.37% 33.48%;
+    }
+
+    &.sponsor-icon-4 {
+      background-position: 98% 1.13%;
+    }
+    }
+  }

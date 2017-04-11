@@ -1,15 +1,15 @@
 body {
-	width: 100%;
-	overflow-X: hidden;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .app-container {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @mixin hyperlinks {
-	font-family: 'montserrat-regular';
-	text-transform: uppercase;
-	font-size: 1.1em;
+  font-family: "montserrat-regular";
+  text-transform: uppercase;
+  font-size: 1.1em;
 }

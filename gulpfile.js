@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
+    scsslint = require('gulp-scss-lint');
     package = require('./package.json');
 
 
@@ -36,6 +37,15 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream:true}));
 });
 
+
+gulp.task('scss-lint', function() {
+  return (gulp.src('src/scss/**/*.scss'))
+          .pipe(scsslint({
+            'config' : '.scss-lint.yml',
+            'reporterOutputFormat': 'Checkstyle'
+          }))
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
         server: {
@@ -47,7 +57,7 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('default', ['css','browser-sync'], function () {
-    gulp.watch("src/scss/**/*.scss", ['css']);
+gulp.task('default', ['css','scss-lint', 'browser-sync'], function () {
+    gulp.watch("src/scss/**/*.scss", ['css', 'scss-lint']);
     gulp.watch("app/*.html", ['bs-reload']);
 });

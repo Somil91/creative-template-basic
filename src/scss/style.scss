@@ -1,32 +1,24 @@
-//----------------------------------*\
-// FlexboxGrid
-//----------------------------------*/
-@import 'flexboxgrid.min.css';
-//----------------------------------*\
-// SCSS BASE : MIXINS
-//----------------------------------*/
-@import 'base/_base.scss';
-//----------------------------------*\
-// CONFIG MODULES
-//----------------------------------*/
-// Config modules
-@import 'modules/_normalize.scss';
-@import 'modules/_vars.scss';
-//----------------------------------*\
-// PARTIALS
-//----------------------------------*/
-@import 'partials/_header.scss';
-@import 'partials/_nav.scss';
-@import 'partials/_main.scss';
-@import 'partials/_footer.scss';
-//----------------------------------*\
-// OBJECTS & MODULES
-//----------------------------------*/
-@import 'modules/_buttons.scss';
-@import 'modules/_typography.scss';
-@import 'modules/_misc.scss';
 
-//----------------------------------*\
+// FlexboxGrid
+@import "flexboxgrid.min.css";
+
+// SCSS BASE : MIXINS
+@import "base/base";
+
+// Config modules
+@import "modules/normalize";
+@import "modules/vars";
+
+// PARTIALS
+@import "partials/header";
+@import "partials/nav";
+@import "partials/main";
+@import "partials/footer";
+
+// OBJECTS & MODULES
+@import "modules/buttons";
+@import "modules/typography";
+@import "modules/misc";
+
 // MEDIA QUERIES
-//----------------------------------*/
-@import 'modules/_breakpoints.scss';
+@import "modules/breakpoints";

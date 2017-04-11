@@ -1,11 +1,11 @@
 .nav-items {
-    a {
-        @include hyperlinks;
-        padding-right: 0.3em;
-        height: 50px;
-        text-align: center;
-        line-height: 50px;
-        text-decoration: none;
-        transition: all 0.3s ease-in;
+  a {
+    @include hyperlinks;
+    padding-right: 0.3em;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
     }
 }
