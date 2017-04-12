@@ -311,39 +311,35 @@ section {
           flex-direction: row;
       width: 95%;
       padding-left: 2em;
-      margin-bottom: 1.3em; }
-    .footer .display-flex-column span {
-      width: 220px;
-      word-wrap: break-word;
+      margin-bottom: 1.3em;
       text-align: start; }
 
 .copyright {
   padding-bottom: 1.3em; }
 
-.social-links span {
+span {
   padding-right: 1.3em;
   display: inline-block; }
-
-.social-links .icon {
-  display: block;
-  position: relative;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #222222; }
-  .social-links .icon::before {
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
+  span .icon {
     display: block;
-    background: url("../img/icons-sheet.png") no-repeat; }
-  .social-links .icon.icon-twitter::before {
-    background-position: 62.64% 24.26%; }
-  .social-links .icon.icon-facebook::before {
-    background-position: 23.4% -0.57%; }
-  .social-links .icon.icon-google-plus::before {
-    background-position: 27% -1%; }
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #222222; }
+    span .icon::before {
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/icons-sheet.png") no-repeat; }
+    span .icon.icon-twitter::before {
+      background-position: 62.64% 24.26%; }
+    span .icon.icon-facebook::before {
+      background-position: 23.4% -0.57%; }
+    span .icon.icon-google-plus::before {
+      background-position: 27% -1%; }
 
 .button {
   max-width: 200px;
