@@ -2,11 +2,13 @@
 // FlexboxGrid
 @import "flexboxgrid.min.css";
 
+//Normalize
+@import "normalize.css";
+
 // SCSS BASE : MIXINS
 @import "base/base";
 
 // Config modules
-@import "modules/normalize";
 @import "modules/vars";
 
 // PARTIALS
